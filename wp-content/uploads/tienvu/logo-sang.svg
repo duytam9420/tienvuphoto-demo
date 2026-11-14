@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1695 1147" role="img" aria-label="Tiến Vũ Photo">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#B78C6C"/></linearGradient></defs>
+  <polygon points="2,5 555,5 842,308 1120,0 1695,0 840,857" fill="url(#g)"/>
+  <g fill="none" stroke="#F1E7D5" stroke-width="24" stroke-linejoin="round">
+    <path d="M2 946H200M98 946V1145"/>
+    <path d="M352 935V1145"/>
+    <path d="M688 946H552Q540 946 540 958V1122Q540 1134 552 1134H688M540 1036H683"/>
+    <path d="M853 1145V958Q853 946 865 946Q872 946 878 955L992 1126Q998 1134 1004 1134Q1015 1134 1015 1122V935"/>
+    <path d="M1180 935L1263 1135Q1270 1145 1277 1135L1360 935"/>
+    <path d="M1526 935V1075Q1526 1134 1600 1134Q1673 1134 1673 1075V935"/>
+  </g>
+</svg>
