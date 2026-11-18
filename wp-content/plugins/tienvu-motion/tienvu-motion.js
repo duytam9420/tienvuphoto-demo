@@ -490,7 +490,8 @@
 		function clone(k) {
 			var c = k.cloneNode(true);
 			c.setAttribute('aria-hidden', 'true');
-			$$('a, button, [tabindex]', c).forEach(function (a) { a.setAttribute('tabindex', '-1'); });
+			// Ô nhãn hàng có thể chính là liên kết (container HTML Tag a) → bản sao cũng không nhận focus.
+			$$('a, button, [tabindex]', c).concat(c.matches('a, button') ? [c] : []).forEach(function (a) { a.setAttribute('tabindex', '-1'); });
 			return c;
 		}
 		var need = Math.max(el.clientWidth, W.screen ? W.screen.width : 0) + 40, guard = 0;

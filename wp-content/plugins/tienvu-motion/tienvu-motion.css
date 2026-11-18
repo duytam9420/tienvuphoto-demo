@@ -181,6 +181,13 @@ body{
 .tv-lm-track .elementor-widget-image img{height:40px;width:auto;object-fit:contain}
 .tv-logo-marquee:hover .tv-lm-track,.tv-logo-marquee:focus-within .tv-lm-track,.tv-logo-marquee.tv-lm-off .tv-lm-track{animation-play-state:paused}
 @keyframes tv-lm{to{transform:translateX(-50%)}}
+/* Ô nhãn hàng là container (Trang chủ): giữ Width đặt trong Elementor; khoảng cách giữa ô = Gaps (cột) của container hàng
+   (biến --column-gap do Elementor đặt, được tính ngay trên container hàng rồi truyền xuống các ô). */
+.tv-logo-marquee{--tv-tile-gap:var(--column-gap,16px)}
+.tv-lm-track>.e-con{width:var(--width)!important;margin:0 var(--tv-tile-gap) 0 0!important}
+.tv-lm-track>.e-con .elementor-widget-image img{height:auto;max-height:56px}
+/* Hàng chạy ngược chiều (sang phải): thêm lớp tv-logo-marquee--reverse bên cạnh tv-logo-marquee. */
+.tv-logo-marquee--reverse .tv-lm-track{animation-direction:reverse}
 
 /* Giảm chuyển động: cổng trong <head> không thêm tv-js nên các trạng thái chờ ở trên không áp dụng; chặn thêm mọi chuyển tiếp. */
 @media (prefers-reduced-motion:reduce){
