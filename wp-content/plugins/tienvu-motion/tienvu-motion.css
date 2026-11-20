@@ -178,14 +178,14 @@ body{
 .tv-js .tv-logo-marquee.tv-lm-on{flex-wrap:nowrap!important;justify-content:flex-start!important;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
 .tv-lm-track{display:flex;flex:none;align-items:center;width:max-content;animation:tv-lm var(--tv-lm-t,40s) linear infinite}
 .tv-lm-track>*{flex:none!important;width:auto!important;max-width:none!important;margin:0 var(--tv-lm-gap,56px) 0 0!important}
-.tv-lm-track .elementor-widget-image img{height:40px;width:auto;object-fit:contain}
+/* Cỡ logo = Width (px) đặt trong widget Image của Elementor (Height để Auto); plugin chỉ giữ tỉ lệ, không ép chiều cao. */
+.tv-lm-track .elementor-widget-image img{object-fit:contain}
 .tv-logo-marquee:hover .tv-lm-track,.tv-logo-marquee:focus-within .tv-lm-track,.tv-logo-marquee.tv-lm-off .tv-lm-track{animation-play-state:paused}
 @keyframes tv-lm{to{transform:translateX(-50%)}}
 /* Ô nhãn hàng là container (Trang chủ): giữ Width đặt trong Elementor; khoảng cách giữa ô = Gaps (cột) của container hàng
    (biến --column-gap do Elementor đặt, được tính ngay trên container hàng rồi truyền xuống các ô). */
 .tv-logo-marquee{--tv-tile-gap:var(--column-gap,16px)}
 .tv-lm-track>.e-con{width:var(--width)!important;margin:0 var(--tv-tile-gap) 0 0!important}
-.tv-lm-track>.e-con .elementor-widget-image img{height:auto;max-height:56px}
 /* Hàng chạy ngược chiều (sang phải): thêm lớp tv-logo-marquee--reverse bên cạnh tv-logo-marquee. */
 .tv-logo-marquee--reverse .tv-lm-track{animation-direction:reverse}
 
