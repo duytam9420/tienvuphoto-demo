@@ -1,0 +1,13 @@
+/*
+ * Font chữ toàn site: SVN-Aptima (bố chọn 2026-11-20; bản Việt hoá của Aptima, nguồn ~/Library/Fonts trên máy bố).
+ * Lưu ý bản quyền: Aptima gốc là font thương mại của Linotype/Monotype; bản Việt hoá không kèm giấy phép dùng trên web.
+ * Bố/studio chấp nhận rủi ro này. Global Kit của Elementor gọi tên họ font "SVN-Aptima" (lib/site.php).
+ * Có Elementor Pro: có thể khai báo cùng 4 tệp này ở Elementor → Custom Fonts thay cho tệp CSS này.
+ */
+@font-face{font-family:"SVN-Aptima";src:url("fonts/svn-aptima-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"SVN-Aptima";src:url("fonts/svn-aptima-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"SVN-Aptima";src:url("fonts/svn-aptima-bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"SVN-Aptima";src:url("fonts/svn-aptima-bold-italic.woff2") format("woff2");font-weight:700;font-style:italic;font-display:swap}
+body{font-family:"SVN-Aptima",sans-serif}
+/* Link dài (URL dán thẳng trong bài blog) xuống dòng được, không đẩy trang tràn ngang trên điện thoại. */
+body.single-post p a{overflow-wrap:anywhere}
