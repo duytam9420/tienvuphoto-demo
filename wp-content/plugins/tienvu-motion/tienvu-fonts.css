@@ -11,3 +11,6 @@
 body{font-family:"SVN-Aptima",sans-serif}
 /* Link dài (URL dán thẳng trong bài blog) xuống dòng được, không đẩy trang tràn ngang trên điện thoại. */
 body.single-post p a{overflow-wrap:anywhere}
+/* Tiêu đề chữ thẳng hết (bố 2026-11-21). Từ nhấn trong tiêu đề vẫn bọc <em> để giữ màu nhấn, nhưng không nghiêng.
+   Elementor không có ô chỉnh kiểu chữ cho riêng phần <em> bên trong một widget Tiêu đề, nên cần một dòng CSS. */
+.elementor-heading-title em,h1 em,h2 em,h3 em,h4 em,h5 em,h6 em,.elementor-heading-title i,h1 i,h2 i,h3 i,h4 i,h5 i,h6 i{font-style:normal}
